@@ -12,7 +12,7 @@ body
     height: 95vh;
     position:relative;
     top: 2.5vh;
-    border-radius: 5px;;
+    border-radius: 10px;;
 }
 
 .left-panel
@@ -22,5 +22,5 @@ body
 #background
 {
     max-height:95vh;
-    border-radius: 5px;;
+    border-radius: 10px;;
 }
