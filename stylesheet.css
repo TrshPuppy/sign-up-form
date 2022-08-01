@@ -13,4 +13,10 @@ body
     height: 95vh;
     position:relative;
     top: 2.5vh;
+    border-radius: 5px;;
+}
+
+.left-panel
+{
+    background-image: url(./img/background.jpg);
 }
