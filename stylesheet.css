@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Press+Start+2P&family=Trispace&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
 body
 {
     margin: 0;
@@ -13,9 +19,8 @@ body
     align-items: center;
     justify-content:center;
     margin: 0 auto;
-    width:clamp(75ch, 70vw, 70%);
+    width:70vw;
     height: 95vh;
-    position:relative;
     top: 2.5vh;
     border-radius: 10px;
     background-color: #2A281C;
@@ -58,22 +63,19 @@ body
     justify-content: center;
     color: white;
     background-color: rgba(0,0,0, .5);
-    position:absolute;
-    width:35%;
+    position:relative;
+    width:30%;
+
 }
 .logo-strip p
 {
-    width:25%;
+    width:min(50%,25%);
     font-family: 'Press Start 2P', monospace;
     font-size: 1.5rem;
 }
-.logo
-{
-    width:25%;
-}
 #logo
 {
-    width:70%;
+
 }
 
 .right-panel
