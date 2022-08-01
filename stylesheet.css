@@ -30,4 +30,10 @@ body
     position:relative;
     bottom: 6vh;
     margin:0 auto;
+    color: white;
+    font-size: .8rem;
+}
+.author a
+{
+    color:inherit;
 }
