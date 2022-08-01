@@ -4,3 +4,13 @@ body
     padding: 0;
     background-color: grey;
 }
+
+.main
+{
+    background-color: white;
+    margin: 0 auto;
+    width:70vw;
+    height: 95vh;
+    position:relative;
+    top: 2.5vh;
+}
