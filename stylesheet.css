@@ -7,7 +7,6 @@ body
 
 .main
 {
-    background-color: white;
     margin: 0 auto;
     width:70vw;
     height: 95vh;
@@ -18,5 +17,10 @@ body
 
 .left-panel
 {
-    background-image: url(./img/background.jpg);
+    width:30%;
+}
+#background
+{
+    max-height:95vh;
+    border-radius: 5px;;
 }
