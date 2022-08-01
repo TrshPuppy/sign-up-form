@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Press+Start+2P&family=Trispace&display=swap');
 body
 {
     margin: 0;
@@ -54,7 +55,19 @@ body
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: rgba(0,0,0, .8);
+    background-color: rgba(0,0,0, .5);
     position:absolute;
+    width:100%;
+}
+.logo-strip p
+{
+    width:25%;
+}
+.logo
+{
+    width:25%;
+}
+#logo
+{
     width:100%;
 }
