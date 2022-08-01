@@ -7,6 +7,8 @@ body
 
 .main
 {
+    display:flex;
+    flex-flow: column wrap;
     margin: 0 auto;
     width:clamp(75ch, 70vw, 70%);
     height: 95vh;
@@ -18,11 +20,11 @@ body
 
 .left-panel
 {
-   display: flex;
-   flex-flow: column nowrap;
-   align-items: center;
-   justify-content: center;
-    width:25%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width:clamp(45ch, 25%, 30%);
     position:fixed;
     height:95vh;
     top:2.5vh;
