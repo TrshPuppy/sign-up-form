@@ -11,7 +11,7 @@ body
     display:flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     margin: 0 auto;
     width:clamp(75ch, 70vw, 70%);
     height: 95vh;
@@ -30,6 +30,7 @@ body
     width:clamp(45ch, 25%, 30%);
     height:95vh;
     top:2.5vh;
+    width:35%;
 }
 #background
 {
@@ -58,7 +59,7 @@ body
     color: white;
     background-color: rgba(0,0,0, .5);
     position:absolute;
-    width:clamp(45ch, 25%, 30%);
+    width:35%;
 }
 .logo-strip p
 {
@@ -75,14 +76,24 @@ body
     width:70%;
 }
 
-section
+.right-panel
 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    width:67.5%;
+    width:65%;
     background-color: pink;
-    position:absolute;
+ 
     right:0;
+}
+form
+{
+    align-self: start;
+    
+}
+section
+{
+
+    background-color: white;
 }
