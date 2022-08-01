@@ -18,9 +18,16 @@ body
 .left-panel
 {
     width:30%;
+    text-align: center;
 }
 #background
 {
     max-height:95vh;
     border-radius: 10px;;
+}
+.author
+{
+    position:relative;
+    bottom: 6vh;
+    margin:0 auto;
 }
