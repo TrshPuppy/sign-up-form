@@ -87,7 +87,7 @@
                 </div>
             </fieldset>
             <fieldset class="submit-btn">
-                <button type="button">Create Account</button>
+                <button type="submit">Create Account</button>
                 <p><br> Already have an account? <br> Login</p>
             </fieldset>
         </form>
@@ -110,11 +110,13 @@
         {
             pass2.classList.remove("invalid");
             pass2.classList.add("valid");
+            submitButton.type = "submit";
         }
         else
         {
             pass2.classList.remove("valid");
             pass2.classList.add("invalid");
+            submitButton.type = "button";
         }
     }
 </script>
