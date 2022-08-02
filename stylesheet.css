@@ -35,7 +35,7 @@ body
     background-position: center;
     background-repeat: no-repeat;
     background-size:auto;
-    width: clamp(45ch, 30%, 32%);
+    width: clamp(45ch, 30%,32%);
     border-radius: 10px;
 }
 .logo-strip
@@ -64,10 +64,16 @@ body
 
 .form-container
 {
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
     background-color: pink;
     width: max(50%, 45ch);
     min-height: 70%;
     border-radius: 10px;
+    padding:50px;
+    box-sizing: border-box;
 }
 .context
 {
