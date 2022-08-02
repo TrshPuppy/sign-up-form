@@ -19,9 +19,9 @@ body
 {
     display:flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    
+    height:90vh;
 }
 
 .picture
@@ -29,14 +29,13 @@ body
     display:flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: space-around;
+    flex-shrink: 2;
     background-image: url(./img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size:auto;
     width: 45ch;
-    height:90vh;
     border-radius: 10px;
 }
 .logo-strip
@@ -50,14 +49,14 @@ body
     color:white;
     font-family: 'Press Start 2P', monospace;
     font-size: 1.5rem;
+    padding:10px;
 }
 .author
 {
     color:white;
     font-family: 'Trispace', sans-serif;
     font-size: .8rem;
-    position:relative;
-    top:200px;
+
 }
 .author a
 {
