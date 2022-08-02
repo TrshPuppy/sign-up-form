@@ -50,7 +50,7 @@ body
     background-color: rgba(0,0,0,.5);
     color:white;
     font-family: 'Press Start 2P', monospace;
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding:10px;
 }
 .author
@@ -82,10 +82,13 @@ body
     box-sizing: border-box;
     padding:50px;
     font-family: 'Inconsolata', monospace;
-    font-size: 2rem;
     border-radius: 10px;
     margin-bottom:50px;
     color:white;
+}
+.context p
+{
+    font-size: clamp(1.5rem, 2rem, 2vw);
 }
 .context .p2
 {
