@@ -127,6 +127,14 @@ form
     box-sizing: border-box;
     width: fit-content;
 }
+input
+{
+    padding:8px;
+    border-radius: 10px;
+    font-size: .8rem;
+    margin:5px 0px;
+    border: 2px solid #68F9EC;
+}
 .submit-btn
 {
     padding:10px;
@@ -151,7 +159,6 @@ button:hover
 }
 button:active
 {
-
     box-shadow: none;
     transform: translateY(5px);
 }
