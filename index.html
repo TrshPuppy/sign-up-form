@@ -87,11 +87,36 @@
                 </div>
             </fieldset>
             <fieldset class="submit-btn">
-                <button type="submit">Create Account</button>
+                <button type="button">Create Account</button>
                 <p><br> Already have an account? <br> Login</p>
             </fieldset>
         </form>
     </div>
 </div>
+<script>
+    const password = document.querySelector("#password");
+    console.log(password);
+    const confirmPassword = document.querySelector("#confirm-password");
+    const submitButton = document.querySelector("button");
+
+    submitButton.addEventListener("click", () =>
+    {
+        checkPassword(password, confirmPassword);
+    });
+
+    function checkPassword(pass1, pass2)
+    {
+        if(pass1.value === pass2.value)
+        {
+            pass2.classList.remove("invalid");
+            pass2.classList.add("valid");
+        }
+        else
+        {
+            pass2.classList.remove("valid");
+            pass2.classList.add("invalid");
+        }
+    }
+</script>
 </body>
 </html>

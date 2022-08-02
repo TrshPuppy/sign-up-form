@@ -153,6 +153,14 @@ input
     margin:5px 0px;
     border: 2px solid #008AD2;
 }
+#confirm-password:invalid
+{
+    border: 2px solid red;
+}
+#confirm-password:valid
+{
+    border: 2px solid #008AD2;
+}
 .submit-btn
 {
     padding:10px;
