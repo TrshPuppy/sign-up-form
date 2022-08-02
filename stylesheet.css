@@ -69,7 +69,14 @@ body
     min-height: 70%;
     border-radius: 10px;
 }
-
+.context
+{
+    background-color: bisque;
+}
+form
+{
+    background-color: lightblue;
+}
 
 
 
