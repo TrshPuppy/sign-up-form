@@ -103,15 +103,16 @@ form
     border-radius: 10px;
     font-family: 'Trispace', monospace;
     align-self: stretch;
-    color:#00A9FC;
+    color:white;
 }
 .form-macro
 {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 20px;
+    width:80%;
 }
 .input
 {
@@ -121,7 +122,7 @@ form
     justify-content: space-between;
     padding:10px;
     box-sizing: border-box;
-    width:40%;
+    width: fit-content;
 }
 
 
