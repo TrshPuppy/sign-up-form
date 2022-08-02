@@ -153,7 +153,6 @@ input
     margin:5px 0px;
     border: 2px solid #008AD2;
 }
-
 .submit-btn
 {
     padding:10px;
@@ -181,101 +180,3 @@ button:active
     box-shadow: none;
     transform: translateY(5px);
 }
-
-
-
-
-
-
-
-
-
-
-/* 
-.main
-{
-    display:flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content:center;
-    margin: 0 auto;
-    width:70vw;
-    height: 95vh;
-    top: 2.5vh;
-    border-radius: 10px;
-    background-color: #2A281C;
-}
-
-.left-panel
-{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    width:clamp(45ch, 25%, 30%);
-    height:95vh;
-    top:2.5vh;
-    width:35%;
-}
-#background
-{
-    height: 95vh;
-    border-radius: 10px;
-    width:100%;
-}
-.author
-{
-    position:absolute;
-    bottom: 2vh;
-    color: white;
-    font-size: .7rem;
-}
-.author a
-{
-    color:inherit;
-}
-
-.logo-strip
-{
-    display:flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: rgba(0,0,0, .5);
-    position:relative;
-    width:30%;
-
-}
-.logo-strip p
-{
-    width:min(50%,25%);
-    font-family: 'Press Start 2P', monospace;
-    font-size: 1.5rem;
-}
-#logo
-{
-
-}
-
-.right-panel
-{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    width:65%;
-    background-color: pink;
- 
-    right:0;
-}
-form
-{
-    align-self: start;
-    
-}
-section
-{
-
-    background-color: white;
-} */
