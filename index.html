@@ -28,15 +28,20 @@
         <form action="" method="get">
             <fieldset class="form-macro">
                 <div class="input">
-                    <label for="first-name">First Name</label>
-                    <input type="text"id="first-name" name="first_name" placeholder="Puppy" required>
+                    <label for="first-name">First Name*</label>
+                    <input type="text"
+                    id="first-name"
+                    name="first_name"
+                    placeholder="Puppy"
+                    pattern="[a-zA-Z]+"
+                    required>
                 </div>
                 <div class="input">
                     <label for="last-name">Last Name</label>
                     <input type="text"id="last-name" name="last_name" placeholder="Doe">
                 </div>
                 <div class="input">
-                    <label for="email">Email</label>
+                    <label for="email">Email*</label>
                     <input type="email"id="email" name="email" placeholder="puppydoe@email.com" required>
                 </div>
                 <div class="input">
@@ -44,11 +49,11 @@
                     <input type="text"id="number" name="phone_number" placeholder="000-000-0000">
                 </div>
                 <div class="input">
-                    <label for="password">Password</label>
+                    <label for="password">Password*</label>
                     <input class="input-box"type="password"id="password" name="password" required>
                 </div>
                 <div class="input">
-                    <label for="confirm-password">Confirm Password</label>
+                    <label for="confirm-password">Confirm Password*</label>
                     <input type="password"id="confirm-password" name="confirm_password"required>
                 </div>
             </fieldset>
