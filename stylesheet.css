@@ -91,6 +91,11 @@ body
 form
 {
     background-color: lightblue;
+    box-sizing: border-box;
+    padding:10px;
+    border-radius: 10px;
+    font-family: 'Trispace', monospace;
+    align-self: stretch;
 }
 
 
