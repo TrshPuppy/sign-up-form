@@ -21,19 +21,20 @@ body
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-
 }
 .picture
 {
+
     background-color: white;
-    width:30%;
+    width: 45ch;
     height:80vh;
 
 }
 .form-container
 {
+
     background-color: pink;
-    width:60%;
+    width: max(50%, 45ch);
     height:80vh;
 
 }
