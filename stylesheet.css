@@ -78,6 +78,15 @@ body
 .context
 {
     background-color: bisque;
+    box-sizing: border-box;
+    padding:10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.context .p2
+{
+    font-weight: bold;
 }
 form
 {
