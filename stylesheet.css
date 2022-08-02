@@ -90,6 +90,10 @@ body
 }
 form
 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
     background-color: lightblue;
     box-sizing: border-box;
     padding:10px;
@@ -97,6 +101,23 @@ form
     font-family: 'Trispace', monospace;
     align-self: stretch;
 }
+.form-macro
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:20px;
+}
+.input
+{
+    display: flex;
+    flex-flow: column nowrap;
+    padding:10px;
+    box-sizing: border-box;
+    width:40%;
+}
+
 
 
 
