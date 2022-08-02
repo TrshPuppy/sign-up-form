@@ -21,22 +21,24 @@ body
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    
 }
 .picture
 {
-
-    background-color: white;
+    background-image: url(./img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 45ch;
-    height:80vh;
-
+    height:90vh;
+    border-radius: 10px;
 }
 .form-container
 {
-
     background-color: pink;
     width: max(50%, 45ch);
-    height:80vh;
-
+    height:90vh;
+    border-radius: 10px;
 }
 
 
