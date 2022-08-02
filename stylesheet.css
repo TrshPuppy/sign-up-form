@@ -131,7 +131,8 @@ input
 {
     padding:8px;
     border-radius: 10px;
-    font-size: .8rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: .95rem;
     margin:5px 0px;
     border: 2px solid #68F9EC;
 }
