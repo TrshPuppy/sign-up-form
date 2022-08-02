@@ -23,16 +23,47 @@ body
     justify-content: center;
     
 }
+
 .picture
 {
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
     background-image: url(./img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150%;
     width: 45ch;
     height:90vh;
     border-radius: 10px;
 }
+.logo-strip
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: stretch;
+    background-color: rgba(0,0,0,.5);
+    color:white;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.5rem;
+}
+.author
+{
+    color:white;
+    font-family: 'Trispace', sans-serif;
+    font-size: .8rem;
+    position:relative;
+    top:200px;
+}
+.author a
+{
+    color:inherit;
+}
+
 .form-container
 {
     background-color: pink;
