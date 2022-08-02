@@ -127,7 +127,7 @@ form
 }
 fieldset
 {
-    border: 2px solid #E0F380;
+    border: 2px solid #77301E;
     border-top: transparent;
     border-bottom: transparent;
     border-right: transparent;
@@ -149,7 +149,7 @@ input
     font-family: 'Inconsolata', monospace;
     font-size: .95rem;
     margin:5px 0px;
-    border: 2px solid #68F9EC;
+    border: 2px solid #77301E;
 }
 .submit-btn
 {
@@ -164,14 +164,14 @@ button
     font-weight: bolder;
     border-radius: 10px;
     color:white;
-    border:3px solid #68F9EC;
+    border:3px solid #77301E;
     background-color: transparent;
     box-shadow: 5px 5px rgba(0,0,0,.5);
 }
 button:hover
 {
-    background-color: #68F9EC;
-    color:rgba(0,0,0,.8);;
+    background-color: #DE5F10;
+    color:rwhite;
 }
 button:active
 {
