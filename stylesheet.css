@@ -45,12 +45,20 @@ body
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     align-self: stretch;
     background-color: rgba(0,0,0,.5);
     color:white;
     font-family: 'Press Start 2P', monospace;
     font-size: 2.3rem;
+    padding:10px;
+}
+.logo-strip p
+{
+    padding: 10px;
+}
+.logo
+{
     padding:10px;
 }
 .author
@@ -116,6 +124,13 @@ form
     justify-content: space-between;
     margin-bottom: 20px;
     width:80%;
+}
+fieldset
+{
+    border: 2px solid #E0F380;
+    border-top: transparent;
+    border-bottom: transparent;
+    border-right: transparent;
 }
 .input
 {
