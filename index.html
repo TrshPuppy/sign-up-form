@@ -34,27 +34,54 @@
                     name="first_name"
                     placeholder="Puppy"
                     pattern="[a-zA-Z]+"
+                    maxlength="15"
                     required>
                 </div>
                 <div class="input">
                     <label for="last-name">Last Name</label>
-                    <input type="text"id="last-name" name="last_name" placeholder="Doe">
+                    <input type="text"
+                    id="last-name"
+                    name="last_name"
+                    placeholder="Doe"
+                    pattern="[a-zA-Z]+"
+                    maxlength="15">
                 </div>
                 <div class="input">
                     <label for="email">Email*</label>
-                    <input type="email"id="email" name="email" placeholder="puppydoe@email.com" required>
+                    <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="puppydoe@email.com"
+                    max-length="25"
+                    required>
                 </div>
                 <div class="input">
                     <label for="number">Phone #</label>
-                    <input type="text"id="number" name="phone_number" placeholder="000-000-0000">
+                    <input type="text"
+                    id="number"
+                    name="phone_number"
+                    placeholder="000-000-0000"
+                    pattern="[0-9-]+"
+                    minlength="10"
+                    maxlength="12">
                 </div>
                 <div class="input">
                     <label for="password">Password*</label>
-                    <input class="input-box"type="password"id="password" name="password" required>
+                    <input type="password"
+                    id="password"
+                    name="password"
+                    minlength="10"
+                    maxlength="25"
+                    required>
                 </div>
                 <div class="input">
                     <label for="confirm-password">Confirm Password*</label>
-                    <input type="password"id="confirm-password" name="confirm_password"required>
+                    <input type="password"
+                    id="confirm-password"
+                    name="confirm_password"
+                    minlength="10"
+                    max-length="25"
+                    required>
                 </div>
             </fieldset>
             <fieldset class="submit-btn">
