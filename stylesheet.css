@@ -78,13 +78,13 @@ body
 }
 .context
 {
-    background-color: rgba(0,0,0,.5);
+    background-color: #797081;
     box-sizing: border-box;
-    padding:20px;
+    padding:50px;
     font-family: 'Inconsolata', monospace;
     font-size: 2rem;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom:50px;
     color:white;
 }
 .context .p2
@@ -97,10 +97,10 @@ form
     flex-flow: column nowrap;
     align-items: flex-start;
     justify-content: center;
-    background-color:#797081;
+    background-color:#348AC7;
     box-sizing: border-box;
-    padding:20px;
     border-radius: 10px;
+    padding:20px;
     font-family: 'Trispace', monospace;
     align-self: stretch;
     color:white;
