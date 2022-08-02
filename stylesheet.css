@@ -12,6 +12,28 @@ body
     background-color: grey;
 }
 
+.picture
+{
+    width: 40vw;
+}
+.background
+{
+    width:40vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .main
 {
     display:flex;
@@ -98,4 +120,4 @@ section
 {
 
     background-color: white;
-}
+} */
