@@ -3,7 +3,7 @@
 {
     margin: 0;
     padding: 0;
-    color:white;
+
 }
 
 body
@@ -80,11 +80,12 @@ body
 {
     background-color: rgba(0,0,0,.5);
     box-sizing: border-box;
-    padding:10px;
+    padding:20px;
     font-family: 'Inconsolata', monospace;
     font-size: 2rem;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color:white;
 }
 .context .p2
 {
@@ -95,26 +96,29 @@ form
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    justify-content: flex-start;
-    background-color:rgba(111,249,234,.3);
+    justify-content: center;
+    background-color:#797081;
     box-sizing: border-box;
     padding:20px;
     border-radius: 10px;
     font-family: 'Trispace', monospace;
     align-self: stretch;
+    color:#00A9FC;
 }
 .form-macro
 {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 20px;
 }
 .input
 {
     display: flex;
     flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
     padding:10px;
     box-sizing: border-box;
     width:40%;
