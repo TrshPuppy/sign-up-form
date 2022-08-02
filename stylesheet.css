@@ -7,13 +7,36 @@
 
 body
 {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
     background-color: grey;
+    height:100vh;
 }
 
+.content
+{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 
+}
+.picture
+{
+    background-color: white;
+    width:30%;
+    height:80vh;
 
+}
+.form-container
+{
+    background-color: pink;
+    width:60%;
+    height:80vh;
+
+}
 
 
 
