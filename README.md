@@ -1,5 +1,5 @@
 # sign-up-form
-
+# LIVE PREVIEW HERE: https://trshpuppy.github.io/sign-up/sign-up.html
 ### This is a sign-up form I designed for the Odin Project (theodinproject.com).
 You can see the details of the project here: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form
 
