@@ -165,6 +165,14 @@ input
 {
     padding:10px;
 }
+.submit-btn p
+{
+    padding: 10px;
+}
+.error-text
+{
+    color:red;
+}
 button
 {
     padding:15px;

@@ -88,16 +88,18 @@
             </fieldset>
             <fieldset class="submit-btn">
                 <button type="submit">Create Account</button>
-                <p><br> Already have an account? <br> Login</p>
+                <p class="error-text" hidden> Your Passwords don't match!</p>
+                <p> Already have an account? <br> Login</p>
+               
             </fieldset>
         </form>
     </div>
 </div>
 <script>
     const password = document.querySelector("#password");
-    console.log(password);
     const confirmPassword = document.querySelector("#confirm-password");
     const submitButton = document.querySelector("button");
+    const errorText = document.querySelector(".error-text");
 
     submitButton.addEventListener("click", () =>
     {
@@ -117,6 +119,7 @@
             pass2.classList.remove("valid");
             pass2.classList.add("invalid");
             submitButton.type = "button";
+            errorText.attributes.remove("hidden");
         }
     }
 </script>
