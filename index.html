@@ -88,13 +88,14 @@
                 </fieldset>
                 <fieldset class="submit-btn">
                     <button type="submit">Create Account</button>
-                    <p class="error-text" hidden> Your Passwords don't match!</p>
-                    <p> Already have an account? <br><a href="https://trshpuppy.github.io"target="_blank">Login</a></p>
+                    <p class="error-text" hidden>Your Passwords don't match!</p>
+                    <p>Already have an account?<br><a href="https://trshpuppy.github.io"target="_blank">Login</a></p>
                 </fieldset>
             </form>
         </div>
     </div>
     <script>
+        //Script validates passwords:
         const password = document.querySelector("#password");
         const confirmPassword = document.querySelector("#confirm-password");
         const submitButton = document.querySelector("button");
