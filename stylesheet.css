@@ -197,3 +197,7 @@ button:active
     box-shadow: none;
     transform: translateY(5px);
 }
+.submit-btn a
+{
+    color:white;
+}
