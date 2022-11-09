@@ -63,15 +63,19 @@
               />
             </div>
             <div class="input">
-              <label for="email">Email*</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="puppydoe@email.com"
-                max-length="25"
-                required
-              />
+              <label for="email">
+                <span>Email:</span>
+                <input
+                  type="email"
+                  id="mail"
+                  name="email"
+                  placeholder="puppydoe@email.com"
+                  minlength="8"
+                  maxlength="25"
+                  required
+                />
+                <span class="error" aria-live="polite"></span>
+              </label>
             </div>
             <div class="input">
               <label for="number">Phone #</label>

@@ -1,202 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Press+Start+2P&family=Trispace&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Press+Start+2P&family=Trispace&display=swap");
 
-*
-{
-    margin: 0;
-    padding: 0;
-}
-
-body
-{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    background-color:  #797081;
-    height:100vh;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.content
-{
-    display:flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: center;
-    height:90vh;
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #797081;
+  height: 100vh;
 }
 
-.picture
-{
-    display:flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
-    flex-shrink: 2;
-    background-image: url(./img/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    width: clamp(45ch, 30%,32%);
-    border-radius: 10px;
-    min-height: 25%;
-}
-.logo-strip
-{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    background-color: rgba(0,0,0,.5);
-    color:white;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 2.2rem;
-    padding:10px;
-}
-.logo-strip p
-{
-    padding: 10px;
-}
-.logo
-{
-    padding:10px;
-    width:90%;
-}
-.author
-{
-    color:white;
-    font-family: 'Trispace', sans-serif;
-    font-size: .8rem;
-}
-.author a
-{
-    color:inherit;
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+  height: 90vh;
 }
 
-.form-container
-{
-    display:flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    background-color:rgba(0,0,0,.5);
-    width: max(50%, 45ch);
-    border-radius: 10px;
-    padding:50px;
-    box-sizing: border-box;
+.picture {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-shrink: 2;
+  background-image: url(./img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: clamp(45ch, 30%, 32%);
+  border-radius: 10px;
+  min-height: 25%;
 }
-.context
-{
-    background-color: #797081;
-    box-sizing: border-box;
-    padding:50px;
-    font-family: 'Inconsolata', monospace;
-    border-radius: 10px;
-    margin-bottom:50px;
-    color:white;
+.logo-strip {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Press Start 2P", monospace;
+  font-size: 2.2rem;
+  padding: 10px;
 }
-.context p
-{
-    font-size: clamp(1.5rem, 2rem, 2vw);
+.logo-strip p {
+  padding: 10px;
 }
-.context .p2
-{
-    font-weight: bold;
+.logo {
+  padding: 10px;
+  width: 90%;
 }
-form
-{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: center;
-    background-color:#77301E;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding:20px;
-    font-family: 'Trispace', monospace;
-    align-self: stretch;
-    color:white;
+.author {
+  color: white;
+  font-family: "Trispace", sans-serif;
+  font-size: 0.8rem;
 }
-.form-macro
-{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    width:80%;
+.author a {
+  color: inherit;
 }
-fieldset
-{
-    border: 3px solid #008AD2;
-    border-top: transparent;
-    border-bottom: transparent;
-    border-right: transparent;
-    border-radius: 10px;
+
+.form-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: max(50%, 45ch);
+  border-radius: 10px;
+  padding: 50px;
+  box-sizing: border-box;
 }
-.input
-{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding:10px;
-    box-sizing: border-box;
-    width: fit-content;
+.context {
+  background-color: #797081;
+  box-sizing: border-box;
+  padding: 50px;
+  font-family: "Inconsolata", monospace;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  color: white;
 }
-input
-{
-    padding:8px;
-    border-radius: 10px;
-    font-family: 'Inconsolata', monospace;
-    font-size: .95rem;
-    margin:5px 0px;
-    border: 2px solid #008AD2;
+.context p {
+  font-size: clamp(1.5rem, 2rem, 2vw);
 }
-#confirm-password:invalid
-{
-    border: 2px solid red;
+.context .p2 {
+  font-weight: bold;
 }
-#confirm-password:valid
-{
-    border: 2px solid #008AD2;
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #77301e;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Trispace", monospace;
+  align-self: stretch;
+  color: white;
 }
-.submit-btn
-{
-    padding:10px;
+.form-macro {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 80%;
 }
-.submit-btn p
-{
-    padding: 10px;
+fieldset {
+  border: 3px solid #008ad2;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+  border-radius: 10px;
 }
-.error-text
-{
-    color:red;
+.input {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  width: fit-content;
 }
-button
-{
-    padding:15px;
-    cursor:pointer;
-    font-family: 'Press Start 2P', monospace;
-    font-size: .8rem;
-    font-weight: bolder;
-    border-radius: 10px;
-    color:white;
-    border:3px solid #008AD2;
-    background-color: transparent;
-    box-shadow: 5px 5px rgba(0,0,0,.5);
+input {
+  padding: 8px;
+  border-radius: 10px;
+  font-family: "Inconsolata", monospace;
+  font-size: 0.95rem;
+  margin: 5px 0px;
+  border: 2px solid #008ad2;
 }
-button:hover
-{
-    background-color:#DE5F10;
-    color:white;
+#confirm-password:invalid {
+  border: 2px solid red;
 }
-button:active
-{
-    box-shadow: none;
-    transform: translateY(5px);
+#confirm-password:valid {
+  border: 2px solid #008ad2;
 }
-.submit-btn a
-{
-    color:white;
+.submit-btn {
+  padding: 10px;
+}
+.submit-btn p {
+  padding: 10px;
+}
+.error-text {
+  color: red;
+}
+.error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+.error.active {
+  padding: 0.3em;
+}
+button {
+  padding: 15px;
+  cursor: pointer;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  color: white;
+  border: 3px solid #008ad2;
+  background-color: transparent;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  background-color: #de5f10;
+  color: white;
+}
+button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.submit-btn a {
+  color: white;
 }

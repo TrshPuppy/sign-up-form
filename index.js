@@ -1,14 +1,38 @@
-const email = document.querySelector("#email");
-const confirmPassword = document.querySelector("#confirm-password");
+const form = document.querySelector("form");
+const email = document.getElementById("mail");
+const emailError = document.querySelector("#mail + span.error");
+console.log(emailError);
 
 email.addEventListener("input", (e) => {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("Your email input is invalid");
-    email.reportValidity("");
+  if (email.validity.valid) {
+    emailError.textContent = "";
+    emailError.className = "error";
   } else {
-    email.setCustomValidity("");
+    showError();
   }
 });
+
+form.addEventListener("submit", (event) => {
+  // if the email field is valid, we let the form submit
+  if (!email.validity.valid) {
+    // If it isn't, we display an appropriate error message
+    showError();
+    // Then we prevent the form from being sent by canceling the event
+    event.preventDefault();
+  }
+});
+
+function showError() {
+  if (email.validity.valueMissing) {
+    emailError.textContent = "Please enter an email address.";
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = "Please enter a valid email address.";
+  } else if (email.validity.tooShort) {
+    emailError.textContent = `Email should be at least ${email.minLength} characters.`;
+  }
+
+  emailError.className = "error active";
+}
 
 // //Script validates passwords:
 // const password = document.querySelector("#password");
