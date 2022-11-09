@@ -40,16 +40,19 @@
         <form action="" method="get" novalidate>
           <fieldset class="form-macro">
             <div class="input">
-              <label for="first-name">First Name*</label>
-              <input
-                type="text"
-                id="first-name"
-                name="first_name"
-                placeholder="Puppy"
-                pattern="[a-zA-Z]+"
-                maxlength="15"
-                required
-              />
+              <label for="first-name">
+                <span>First Name:</span>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  placeholder="Puppy"
+                  pattern="[a-zA-Z]+"
+                  maxlength="15"
+                  required
+                />
+                <span class="error" aria-live="polite"></span>
+              </label>
             </div>
             <div class="input">
               <label for="last-name">Last Name</label>

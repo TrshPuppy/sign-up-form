@@ -1,38 +1,51 @@
 const form = document.querySelector("form");
+
 const email = document.getElementById("mail");
 const emailError = document.querySelector("#mail + span.error");
-console.log(emailError);
+
+const firstName = document.getElementById("first-name");
+const firstNameError = document.querySelector("#first-name + span.error");
+
+function showError(inputInstance, inputError) {
+  if (inputInstance.validity.valueMissing) {
+    inputError.textContent = `"Please enter an ${inputInstance.name}.`;
+  } else if (inputInstance.validity.typeMismatch) {
+    inputError.textContent = `Please enter a valid ${inputInstance.name}.`;
+  } else if (inputInstance.validity.tooShort) {
+    inputError.textContent = `${inputInstance.name} should be at least ${inputInstance.minLength} characters.`;
+  }
+
+  inputError.className = "error active";
+}
+
+// Event Listeners:
+firstName.addEventListener("input", (e) => {
+  if (firstName.validity.valid) {
+    firstNameError.textContent = "";
+    firstNameError.className = "error";
+  } else {
+    showError(firstName, firstNameError);
+  }
+});
 
 email.addEventListener("input", (e) => {
   if (email.validity.valid) {
     emailError.textContent = "";
     emailError.className = "error";
   } else {
-    showError();
+    showError(email, emailError);
   }
 });
 
-form.addEventListener("submit", (event) => {
-  // if the email field is valid, we let the form submit
+form.addEventListener("submit", (e) => {
   if (!email.validity.valid) {
-    // If it isn't, we display an appropriate error message
-    showError();
-    // Then we prevent the form from being sent by canceling the event
-    event.preventDefault();
+    showError(email, emailError);
+    e.preventDefault();
+  } else if (!firstName.validity.valid) {
+    showError(firstName, firstNameError);
+    e.preventDefault();
   }
 });
-
-function showError() {
-  if (email.validity.valueMissing) {
-    emailError.textContent = "Please enter an email address.";
-  } else if (email.validity.typeMismatch) {
-    emailError.textContent = "Please enter a valid email address.";
-  } else if (email.validity.tooShort) {
-    emailError.textContent = `Email should be at least ${email.minLength} characters.`;
-  }
-
-  emailError.className = "error active";
-}
 
 // //Script validates passwords:
 // const password = document.querySelector("#password");
